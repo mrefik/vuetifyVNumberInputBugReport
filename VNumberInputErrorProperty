@@ -1,0 +1,12 @@
+<template>
+  <div>
+    {{isFormValid}}
+    <v-form v-model="isFormValid">
+      <v-number-input :error="true" variant="outlined"></v-number-input>
+    </v-form>
+  </div>
+</template>
+<script setup>
+  import {ref} from 'vue'
+  const isFormValid=ref()
+</script>
